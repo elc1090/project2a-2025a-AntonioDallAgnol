@@ -1,0 +1,62 @@
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-color: #c9d1d9;
+    --accent-color: #58a6ff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.navbar-github {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid #30363d;
+}
+
+.card-github {
+    background-color: var(--card-bg);
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+.commit-card {
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.commit-card:hover {
+    background-color: #1f2937;
+    border-left-color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+.commit-message {
+    color: var(--accent-color);
+}
+
+.form-control-github {
+    background-color: var(--card-bg);
+    border: 1px solid #30363d;
+    color: var(--text-color);
+}
+
+.form-control-github:focus {
+    background-color: var(--card-bg);
+    border-color: #58a6ff;
+    color: var(--text-color);
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+.btn-github {
+    background-color: #238636;
+    border-color: #2ea043;
+    color: white;
+}
+
+.btn-github:hover {
+    background-color: #2ea043;
+    border-color: #3fb950;
+}
