@@ -5,7 +5,7 @@
 
 #### Deploy
 
-Preencha aqui a URL para acesso ao site publicado
+(https://githubapiantonio.netlify.app)
 
 
 #### Desenvolvedor(a)
