@@ -151,4 +151,34 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         return response.json();
     }
+
+    document.getElementById('clearButton').addEventListener('click', () => {
+        // Limpa os inputs
+        document.getElementById('usernameInput').value = '';
+        document.getElementById('repoInput').value = '';
+    
+        // Esconde todas as seções
+        document.getElementById('reposList').classList.add('d-none');
+        document.getElementById('commitsList').classList.add('d-none');
+        document.getElementById('repoInfo').classList.add('d-none');
+        document.getElementById('errorAlert').classList.add('d-none');
+        document.getElementById('loadingIndicator').classList.add('d-none');
+    
+        // Limpa conteúdos antigos
+        document.getElementById('reposList').innerHTML = '';
+        document.getElementById('commitsList').innerHTML = '';
+        document.getElementById('errorAlert').textContent = '';
+        document.getElementById('repoFullName').textContent = '';
+        document.getElementById('repoDescription').textContent = '';
+        document.getElementById('repoStars').textContent = '';
+        document.getElementById('repoForks').textContent = '';
+        document.getElementById('repoLanguage').textContent = '';
+        document.getElementById('repoOwnerAvatar').src = '';
+    
+        // Mostra o estado inicial
+        document.getElementById('emptyState').classList.remove('d-none');
+    });
+    
 });
+
+

@@ -1,6 +1,6 @@
 # Projeto2a: GitHub API e DOM Manipulation
 
-![Screenshot do projeto. C:\Users\anton\OneDrive\Área de Trabalho\web\project2a-2025a-AntonioDallAgnol\github-api-tutorial-main\img](https://raw.githubusercontent.com/elc1090/project2a-2025a-AntonioDallAgnol/refs/heads/master/github-api-tutorial-main/img/img%20preview.png "Screenshot do projeto").
+![Screenshot do projeto. C:\Users\anton\OneDrive\Área de Trabalho\web\project2a-2025a-AntonioDallAgnol\img](https://raw.githubusercontent.com/elc1090/project2a-2025a-AntonioDallAgnol/refs/heads/master/img/img%20preview.png "Screenshot do projeto").
 
 
 #### Deploy

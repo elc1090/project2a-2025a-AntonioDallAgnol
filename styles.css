@@ -56,6 +56,18 @@ body {
     color: white;
 }
 
+.btn-outline-secondary {
+    background-color: rgba(1, 53, 224, 0.808);
+    border-color: #30363d;
+    color: var(--text-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: #005ac0;
+    border-color: #58a6ff;
+    color: var(--text-color);
+}
+
 .btn-github:hover {
     background-color: #2ea043;
     border-color: #3fb950;
