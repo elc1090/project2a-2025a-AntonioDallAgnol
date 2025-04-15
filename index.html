@@ -33,7 +33,7 @@
                     <form id="gitHubForm">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label for="usernameInput" class="form-label">Usuário GitHub</label>
+                                <label for="usernameInput" class="form-label">Usuário GitHub*</label>
                                 <input id="usernameInput" class="form-control form-control-github" type="text" 
                                        placeholder="ex: torvalds" required>
                             </div>
@@ -54,11 +54,37 @@
                     </form>
                 </div>
 
-                <!-- Mantenha os outros elementos (loading, repoInfo, etc.) -->
+                <!-- Loading Indicator -->
+                <div id="loadingIndicator" class="text-center my-4">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Carregando...</span>
+                    </div>
+                    <p class="mt-2">Buscando dados no GitHub...</p>
+                </div>
 
+                <!-- Repo Info (aparece quando buscar commits específicos) -->
+                <div id="repoInfo" class="card-github p-4 mb-4 d-none">
+                    <div class="d-flex align-items-center">
+                        <img id="repoOwnerAvatar" src="" alt="Owner avatar" width="50" height="50" class="rounded-circle me-3">
+                        <div>
+                            <h3 id="repoFullName" class="h5 mb-0"></h3>
+                            <p id="repoDescription" class="text-muted mb-0 small"></p>
+                            <div class="d-flex mt-2">
+                                <span class="badge bg-secondary me-2" id="repoStars"></span>
+                                <span class="badge bg-secondary me-2" id="repoForks"></span>
+                                <span class="badge bg-secondary" id="repoLanguage"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error Alert -->
+                <div id="errorAlert" class="alert alert-danger d-none" role="alert"></div>
+
+                <!-- Results Container -->
                 <div id="resultsContainer">
                     <div id="reposList" class="list-group d-none"></div>
-                    <div id="commitsList" class="list-group"></div>
+                    <div id="commitsList" class="list-group d-none"></div>
                     <div id="emptyState" class="text-center py-5">
                         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="100" class="mb-3 opacity-50">
                         <h5 class="text-muted">Informe um usuário GitHub para começar</h5>
